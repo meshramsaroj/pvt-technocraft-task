@@ -1,0 +1,22 @@
+/* You can add global styles to this file, and also import other style files */
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+header {
+  height: 180px;
+  background-color: #172c49;
+}
+
+.section {
+  background-color: #ffffff;
+}
+
+.nav-tabs {
+  border-bottom: none;
+}
+
+button {
+  background-color: #172c49;
+  color: #ffffff;
+}

@@ -1,0 +1,62 @@
+<div class="container w-75 m-auto pt-4  ">
+  <h4>Create Prospect Set Customer</h4>
+  <div class=" py-3  ">
+    <form (ngSubmit)="addProspectSet()" [formGroup]="customerForm">
+      <div class="form-group">
+        <label for="prospectName">Prospect Name: </label>
+        <select class="form-control" formControlName="prospectName" required>
+          <option>Select Customer Name</option>
+          <option>Sales User</option>
+          <option>IT User</option>
+          <option>Marathi User</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="demographic">Demographic: </label>
+        <select class="form-control" formControlName="demographic" required>
+          <option>Select Demographic(state)</option>
+          <option>Maharashtra</option>
+          <option>Madhya Pradesh</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="source">Source:</label>
+        <select class="form-control" formControlName="source" required>
+          <option>Select Source</option>
+          <option>Added By Admin</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="addedBy">Added By:</label>
+        <select class="form-control" formControlName="addedBy" required>
+          <option>Select Added By </option>
+          <option>Ramesh</option>
+          <option>Kulkarni</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="setType">Set Type:</label>
+        <select class="form-control" formControlName="setType" required>
+          <option>Select Set Type</option>
+          <option>Sales Guys</option>
+          <option>Marathi Users</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="howMany">How Many:</label>
+        <select class="form-control" formControlName="howMany" required>
+          <option>Select How Many</option>
+          <option>50</option>
+          <option>100</option>
+          <option>150</option>
+          <option>200</option>
+          <option>250</option>
+          <option>300</option>
+        </select>
+      </div>
+      <div class="d-flex justify-content-center">
+        <button type="submit" class="btn m-2 ">Add Prospect Set</button>
+      </div>
+    </form>
+  </div>
+</div>

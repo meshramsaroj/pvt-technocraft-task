@@ -1,0 +1,71 @@
+<div class="">
+  <div>
+    <app-prospect-set></app-prospect-set>
+  </div>
+  <div class="container-fluid">
+    <div class="container">
+      <table class="table table-striped ">
+        <thead>
+          <tr>
+            <th scope="col">
+              <input
+                type="checkbox"
+                aria-label="Checkbox for following text input"
+              />
+            </th>
+            <th scope="col">Prospect Name</th>
+            <th scope="col">Demographic</th>
+            <th scope="col">Source</th>
+            <th scope="col">Added By</th>
+            <th scope="col">Date Added</th>
+            <th scope="col">Set Type</th>
+            <th scope="col">How Many</th>
+            <th scope="col">Details</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let customer of customerData">
+            <th scope="row">
+              <input
+                type="checkbox"
+                aria-label="Checkbox for following text input"
+                (click)="getId(customer.id)"
+              />
+            </th>
+            <td>{{ customer.prospectName }}</td>
+            <td>{{ customer.demographic }}</td>
+            <td>{{ customer.source }}</td>
+            <td>{{ customer.addedBy }}</td>
+            <td>{{ customer.dateAdded }}</td>
+            <td>{{ customer.setType }}</td>
+            <td class="text-center">{{ customer.howMany }}</td>
+            <td class="text-center">
+              <a routerLink="/customer-info/{{customer.id}}">info</a>
+            </td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td colspan="2"><a routerLink="/create">Add Prospect Set</a></td>
+            <td colspan="2"><a (click)="deleteProspectSet()">Delete Prospect Set</a></td>
+            <td colspan="2"><a (click)="updateProspectCustomer()">Edit Prospect Set</a></td>
+            <td colspan="2"><a routerLink="#">Import Prospect Set</a></td>
+            <td>
+              <ul class="pagination">
+                <li class="page-item"><a class="page-link">1</a></li>
+                <li class="page-item"><a class="page-link">2</a></li>
+                <li class="page-item"><a class="page-link">3</a></li>
+                <li class="page-item">
+                  <a class="page-link" href="#" aria-label="Next">
+                    <span aria-hidden="true">&raquo;</span>
+                  </a>
+                </li>
+              </ul>
+            </td>
+          </tr>
+        </tfoot>
+      </table>
+    </div>
+    <div></div>
+  </div>
+</div>

@@ -1,0 +1,20 @@
+.container-fluid {
+  background-color: #f2fcfe;
+}
+
+table {
+  font-family: "Roboto", sans-serif;
+}
+
+tbody {
+  font-weight: 400;
+}
+
+tbody tr:nth-of-type(odd) {
+  background-color: #ffffff;
+}
+
+tfoot tr td a {
+  text-decoration: none;
+  /* color: #434f5f; */
+}

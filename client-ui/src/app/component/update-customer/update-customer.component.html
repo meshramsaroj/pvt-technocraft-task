@@ -1,0 +1,78 @@
+<div class="container w-75 m-auto pt-4  ">
+  <h4>Update Prospect Set Customer(Name : {{ customerName }})</h4>
+  <div class="py-5">
+    <form [formGroup]="customerForm" (ngSubmit)="updateCustomer()">
+      <div class="form-group row">
+        <label for="prospectName" class="col-sm-4 col-form-label"
+          >Prospect Name
+        </label>
+        <div class="col-sm-8">
+          <select class="form-control" formControlName="prospectName" required>
+            <option>Select Customer Name</option>
+            <option>Sales User</option>
+            <option>IT User</option>
+            <option>Marathi User</option>
+          </select>
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="demographic" class="col-sm-4 col-form-label"
+          >Demographic
+        </label>
+        <div class="col-sm-8">
+          <select class="form-control" formControlName="demographic" required>
+            <option>Select Demographic(state)</option>
+            <option>Maharashtra</option>
+            <option>Madhya Pradesh</option>
+          </select>
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="source" class="col-sm-4 col-form-label">Source </label>
+        <div class="col-sm-8">
+          <select class="form-control" formControlName="source" required>
+            <option>Select Source</option>
+            <option>Added By Admin</option>
+          </select>
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="addedBy" class="col-sm-4 col-form-label">Added By</label>
+        <div class="col-sm-8">
+          <select class="form-control" formControlName="addedBy" required>
+            <option>Select Added By </option>
+            <option>Ramesh</option>
+            <option>Kulkarni</option>
+          </select>
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="setType" class="col-sm-4 col-form-label">Set Type</label>
+        <div class="col-sm-8">
+          <select class="form-control" formControlName="setType" required>
+            <option>Select Set Type</option>
+            <option>Sales Guys</option>
+            <option>Marathi Users</option>
+          </select>
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="howMany" class="col-sm-4 col-form-label">How Many</label>
+        <div class="col-sm-8">
+          <select class="form-control" formControlName="howMany" required>
+            <option>Select How Many</option>
+            <option>50</option>
+            <option>100</option>
+            <option>150</option>
+            <option>200</option>
+            <option>250</option>
+            <option>300</option>
+          </select>
+        </div>
+      </div>
+      <div class="d-flex justify-content-end py-5">
+        <button type="submit" class="btn m-2 ">Update Prospect Set</button>
+      </div>
+    </form>
+  </div>
+</div>
