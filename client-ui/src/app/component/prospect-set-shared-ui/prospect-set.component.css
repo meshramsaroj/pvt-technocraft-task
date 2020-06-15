@@ -23,17 +23,18 @@
 .nav-item a.active {
   border-bottom: 2px solid #6d3888;
 }
+
 .form-inline {
   border: 1px solid #ced4da;
 }
+
 .form-inline span {
   padding: 5px;
 }
 
-.form-inline .form-control{
+.form-inline .form-control {
   border: 0;
   outline: none;
-
 }
 
 .form-inline input,
@@ -41,5 +42,4 @@ button {
   border-radius: 0;
   outline: none;
 }
-
 

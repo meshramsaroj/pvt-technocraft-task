@@ -40,17 +40,17 @@
             <td>{{ customer.setType }}</td>
             <td class="text-center">{{ customer.howMany }}</td>
             <td class="text-center">
-              <a routerLink="/customer-info/{{customer.id}}">info</a>
+              <a routerLink="/customer-info/{{customer.id}}">Info</a>
             </td>
           </tr>
         </tbody>
-        <tfoot>
-          <tr>
-            <td colspan="2"><a routerLink="/create">Add Prospect Set</a></td>
-            <td colspan="2"><a (click)="deleteProspectSet()">Delete Prospect Set</a></td>
-            <td colspan="2"><a (click)="updateProspectCustomer()">Edit Prospect Set</a></td>
-            <td colspan="2"><a routerLink="#">Import Prospect Set</a></td>
-            <td>
+        <tfoot >
+          <tr >
+            <td colspan="2" class="pt-4"><a routerLink="/create">Add Prospect Set</a></td>
+            <td colspan="2" class="pt-4"><a (click)="deleteProspectSet()">Delete Prospect Set</a></td>
+            <td colspan="2" class="pt-4"><a (click)="updateProspectCustomer()">Edit Prospect Set</a></td>
+            <td colspan="2" class="pt-4"><a routerLink="#">Import Prospect Set</a></td>
+            <td class="pt-4">
               <ul class="pagination">
                 <li class="page-item"><a class="page-link">1</a></li>
                 <li class="page-item"><a class="page-link">2</a></li>

@@ -27,29 +27,22 @@ export class CustomerComponent implements OnInit {
     return this.service.getCustomerList().subscribe({
       next: data => {
         this.customerData = data;
-      },
-      error: err => {
-        console.log(err);
       }
-
     })
   }
 
   getId(id) {
-    this.customerId = id
-    console.log(this.customerId);
-
+    this.customerId = id;
   }
 
   deleteProspectSet() {
     this.service.deleteCustomer(this.customerId).subscribe({
       next: data => {
-        console.log(data);
-        this.snackBar.open(`Deleted Successfully`, "Close", { duration: 3000 })
+        this.snackBar.open(`Deleted Successfully`, "Close", { duration: 3000, verticalPosition: 'top' })
         this.getCustomerList();
       },
       error: err => {
-        this.snackBar.open('Erro', "Close", { duration: 3000 })
+        this.snackBar.open('Error', "Close", { duration: 3000, verticalPosition: 'top' })
       }
     })
   }

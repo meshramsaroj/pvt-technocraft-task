@@ -11,6 +11,7 @@ import { TriggerEventComponent } from './component/nav-menu-component/trigger-ev
 import { EmailTemplateComponent } from './component/nav-menu-component/email-template/email-template.component';
 import { CampaignComponent } from './component/nav-menu-component/campaign/campaign.component';
 import { CustomerInfoComponent } from './component/nav-menu-component/customer-info/customer-info.component';
+import { UserComponent } from './component/nav-menu-component/user/user.component';
 
 
 const routes: Routes = [
@@ -22,6 +23,7 @@ const routes: Routes = [
   { path: 'email-template', component : EmailTemplateComponent},
   { path: 'prospect-set',redirectTo:'',component: ProspectSetComponent },
   { path: 'campaign' , component: CampaignComponent},
+  { path: 'user', component: UserComponent},
   { path: 'prospect-set/customer', component: CustomerComponent },
   { path: 'prospect-set/prospect-customer', component: ProspectCustomerComponent},
   { path: 'prospect-set/employee', component: EmployeeComponent },

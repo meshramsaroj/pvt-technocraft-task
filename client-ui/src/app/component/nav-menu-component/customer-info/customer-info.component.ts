@@ -56,4 +56,8 @@ export class CustomerInfoComponent implements OnInit {
 
   }
 
+  goBack() {
+    this.router.navigateByUrl('');
+  }
+
 }

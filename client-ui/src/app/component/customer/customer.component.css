@@ -14,7 +14,35 @@ tbody tr:nth-of-type(odd) {
   background-color: #ffffff;
 }
 
-tfoot tr td a {
+.text-center a {
+  color: #098418;
   text-decoration: none;
-  /* color: #434f5f; */
+  font-weight: 500;
+  font-size: 14px;
 }
+
+thead tr th,tfoot tr td {
+  font-weight: 700;
+  font-size: 14px;
+}
+
+tbody tr td {
+  font-weight: 400;
+  font-size: 14px;
+}
+
+tfoot tr td a {
+  color: #434f45;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.page-link {
+  background-color: transparent;
+  border:none;
+}
+
+
+

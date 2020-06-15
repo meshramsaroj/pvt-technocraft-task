@@ -1,10 +1,5 @@
-<!-- <div class="container" *ngIf="nullData">
-  <h4>Customer Info</h4>
-  <p>No customer selected</p>
-</div> -->
-
 <div class="container pt-4">
-  <h4>Customer Info</h4>
+  <h4>Customer Info -> {{prospectName}}</h4>
   <div class="mt-5">
     <div class=" row">
       <h6 class="col ">Prospect Name </h6>:
@@ -36,4 +31,5 @@
       <p class="col">{{ howMany }}</p>
     </div>
   </div>
+  <button class="btn float-right" (click)="goBack()">Back</button>
 </div>

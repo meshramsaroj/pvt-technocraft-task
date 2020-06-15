@@ -19,6 +19,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms'
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CustomerInfoComponent } from './component/nav-menu-component/customer-info/customer-info.component';
+import { UserComponent } from './component/nav-menu-component/user/user.component';
 
 
 @NgModule({
@@ -35,7 +36,8 @@ import { CustomerInfoComponent } from './component/nav-menu-component/customer-i
     TriggerEventComponent,
     EmailTemplateComponent,
     CampaignComponent,
-    CustomerInfoComponent
+    CustomerInfoComponent,
+    UserComponent
   ],
   imports: [
     BrowserModule,
@@ -44,7 +46,7 @@ import { CustomerInfoComponent } from './component/nav-menu-component/customer-i
     FormsModule,
     ReactiveFormsModule,
     MatSnackBarModule,
-    BrowserAnimationsModule,
+    BrowserAnimationsModule
 
   ],
   providers: [],
