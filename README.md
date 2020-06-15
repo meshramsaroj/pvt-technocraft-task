@@ -30,3 +30,12 @@ Steps need to follow:
  -> ng server - It will run on localhost:4200
  
 Note: Follow all instructions given above if you get any issue then tell me or try to resolve by yourself if it is possible. You can find a solution on StackOverflow.
+
+If you find an error like : if you find error like : Unhandled 'error' event
+
+then: do {
+  ->app.js
+  -> change app.listen(3000)  
+and also do 
+  -> go to service/service.ts
+  ->change baseUrl = "http://localhost:3000/..."
