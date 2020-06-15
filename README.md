@@ -4,9 +4,11 @@ Customer MEAN stack app
 Customer MEAN stack app
 
 Setup Required:
+
 Angular CLI -  9.1.8 
 MongoDB - V4.2.7 
 Node - 12.4.8
+
 Steps need to follow: 
 1.
  1.1 Install MongoDB into your system- https://docs.mongodb.com/manual/tutorial/install-mongodb-on-ubuntu/
