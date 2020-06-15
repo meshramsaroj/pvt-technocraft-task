@@ -8,10 +8,10 @@ MongoDB - V4.2.7
 Node - 12.4.8
 
 Steps need to follow:
-
 1.
-1.1 Install mongodb into your system- https://docs.mongodb.com/manual/tutorial/install-mongodb-on-ubuntu/
-1.2 Start MongoDb  service - sudo service mongod start 
+ 1.1 Install mongodb into your system- https://docs.mongodb.com/manual/tutorial/install-mongodb-on-ubuntu/
+
+ 1.2 Start MongoDb  service - sudo service mongod start 
 
 2. install Angular Cli - npm install -g @angular/cli
 
