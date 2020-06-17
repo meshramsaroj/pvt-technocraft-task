@@ -29,8 +29,6 @@ export class CustomerInfoComponent implements OnInit {
 
   ngOnInit(): void {
     this.getCustomerData();
-    console.log(this.router);
-    // this.nullData = this.activateRoute.snapshot.params.id;
   }
 
 
@@ -39,7 +37,6 @@ export class CustomerInfoComponent implements OnInit {
 
     this.service.getCustomer(this.customerId).subscribe({
       next: data => {
-        console.log(data);
         this.prospectName = data.prospectName;
         this.demographic = data.demographic;
         this.dateAdded = data.dateAdded;
@@ -49,7 +46,7 @@ export class CustomerInfoComponent implements OnInit {
         this.howMany = data.howMany;
       },
       error: err => {
-        console.log('Error' + err);
+        this.snackBar.open('Error', "Close", { duration : 3000});
       }
     })
 

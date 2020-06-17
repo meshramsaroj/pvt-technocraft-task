@@ -45,7 +45,7 @@ export class UpdateCustomerComponent implements OnInit {
         this.customerForm.controls.howMany.setValue(data.howMany);
       },
       error: err => {
-        console.log('Error' + err);
+        this.snackBar.open('Error ' + err);
       }
     })
   }

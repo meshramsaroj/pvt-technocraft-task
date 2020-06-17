@@ -13,12 +13,10 @@
 .nav-item a {
   color: #434f45;
   font-weight: 400;
+  font-size: 16px;
   padding: 0 0 10px 0;
 }
 
-.nav-item .nav-link.active {
-  border: none;
-}
 
 .nav-item a.active {
   border-bottom: 2px solid #6d3888;

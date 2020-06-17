@@ -32,9 +32,9 @@ tbody tr td {
 }
 
 tfoot tr td a {
-  color: #434f45;
+  color: black;
   cursor: pointer;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 700;
   text-decoration: none;
 }

@@ -36,19 +36,31 @@ export class CustomerComponent implements OnInit {
   }
 
   deleteProspectSet() {
-    this.service.deleteCustomer(this.customerId).subscribe({
-      next: data => {
-        this.snackBar.open(`Deleted Successfully`, "Close", { duration: 3000, verticalPosition: 'top' })
-        this.getCustomerList();
-      },
-      error: err => {
-        this.snackBar.open('Error', "Close", { duration: 3000, verticalPosition: 'top' })
-      }
-    })
+    if (this.customerId) {
+      this.service.deleteCustomer(this.customerId).subscribe({
+        next: data => {
+          this.snackBar.open(`Deleted Successfully`, "Close", { duration: 3000 })
+          this.getCustomerList();
+        },
+        error: err => {
+          this.snackBar.open('Error', "Close", { duration: 3000 })
+        }
+      })
+    }
+    else {
+      this.snackBar.open('Please select one checkbox', "Close", { duration: 3000 })
+
+    }
+
   }
 
   updateProspectCustomer() {
-    this.router.navigateByUrl(`/update/${this.customerId}`);
+    if (this.customerId) {
+      this.router.navigateByUrl(`/update/${this.customerId}`);
+    }
+    else {
+      this.snackBar.open('Please select one checkbox', "Close", { duration: 3000 })
+    }
 
   }
 
